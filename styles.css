@@ -1,0 +1,47 @@
+
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.headerBackground {
+    padding: 5px 0;
+    background-color: rgb(54, 33, 172);
+    height: 12em;
+    width: 100%;
+  }
+
+menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(247, 233, 207, 0);
+    z-index: 2;
+  }
+  list {
+    float: left;
+  }
+
+list a {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    border-bottom: 3px solid rgb(197, 197, 197);
+    text-decoration: none;
+    font-family: verdana;
+  }
+  list a:hover {
+    border-bottom: 3px solid gray;
+    color: rgb(184, 184, 184);
+  }
+  list a.active {
+    background-color: rgb(97, 165, 228);
+    border-bottom: white;
+    color: black;
+  }
