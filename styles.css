@@ -15,17 +15,18 @@ body {
     background-color: rgb(10, 32, 105);
     height: 5em;
     width: 100%;
-  }
+  } 
 
 menu {
-    position: absolute;
+    
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: rgba(247, 233, 207, 0);
+    background-color: rgb(10, 32, 105);
     z-index: 2;
   }
   list {
@@ -63,16 +64,22 @@ list a {
       padding-top: 50px;
     }
   .column-left {
-    box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
+    /* box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
     font-family: verdana;
     margin-top: 2em;
     margin-left: 1em;
     top: 20em;
     float: left;
-    width: 32%;
+    width: 50%;
     height: 26em;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
+    width: 300px;
+    height: 100px;  
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    
   }
   .column-center {
     box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
