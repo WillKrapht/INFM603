@@ -4,10 +4,16 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+.header-img {
+  width: 100%;
+  height: 300px;
+  background: url('coronavirus-hero-goods-food-funds.jpg');;
+  background-size: cover;
+}
 .headerBackground {
     padding: 5px 0;
     background-color: rgb(10, 32, 105);
-    height: 12em;
+    height: 5em;
     width: 100%;
   }
 
@@ -24,6 +30,10 @@ menu {
   }
   list {
     float: left;
+  }
+   .main_menu{
+    float: left;
+    margin-left: 80px;
   }
 
 list a {
@@ -45,3 +55,45 @@ list a {
     border-bottom: white;
     color: black;
   }
+
+  a{
+    color:  rgb(10, 32, 105);
+  
+    #row {
+      padding-top: 50px;
+    }
+  .column-left {
+    box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
+    font-family: verdana;
+    margin-top: 2em;
+    margin-left: 1em;
+    top: 20em;
+    float: left;
+    width: 32%;
+    height: 26em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .column-center {
+    box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
+    font-family: verdana;
+    margin-top: 2em;
+    margin-left: 0.5em;
+    float: left;
+    align-content: center;
+    width: 32%;
+    height: 26em;
+    padding-left: 10.5px;
+    border-left: 3px black;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
