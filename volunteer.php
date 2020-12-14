@@ -26,8 +26,8 @@
     $address = $_GET['address'];
     $date = $_GET['date'];
     $location = $_GET['location'];
-    $sql = "INSERT INTO volunteers (center_id, name, email, latest_test)
-              VALUES((SELECT center_id FROM centers WHERE center_name LIKE `%{$location}%`), $name, $email, $date)";
+    $sql = "INSERT INTO volunteers (volunteer_id, center_id, name, email, latest_test)
+              VALUES(DEFAULT, $location, $name, $email, $date)";
     $sql = "SELECT center_name, name, latest_test FROM centers 
             JOIN volunteers USING (center_id)
             ORDER BY center_name, name";
