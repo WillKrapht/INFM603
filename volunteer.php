@@ -24,14 +24,21 @@
     $name = $_GET['name'];
     $email = $_GET['email'];
     $address = $_GET['address'];
-    $date = $_GET['date'];
+    $test_date = $_GET['test_date'];
     $location = $_GET['location'];
-    $sql = "INSERT INTO volunteers (volunteer_id, center_id, name, email, latest_test)
-              VALUES(DEFAULT, $location, $name, $email, $date)";
+
+
+    $sql = "INSERT INTO volunteers (volunteer_id, center_id, name, email, latest_test) VALUES (DEFAULT, '$location', '$name', '$email', '$test_date')";
+    if ($conn->query($sql) === TRUE) {
+      echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+
     $sql = "SELECT center_name, name, latest_test FROM centers 
             JOIN volunteers USING (center_id)
-            ORDER BY center_name, name";
-            
+            ORDER BY center_name, name";        
     $result = $conn->query($sql) or die($conn->error);
     while ($row = $result->fetch_assoc())
     {

@@ -31,57 +31,55 @@
         <div class="header-img"></div>
     </main>
 
-    <form>
+    <form action="patient.php" method="get">
         <h3>Need assistance?</h3>
         <br>
         <text>
             Please fill out the following information so we may assist you with the materials you need.</text>
         <br>
         <h5>Name</h5>
-        <input type="text" name="name" placeholder="Name">
-        <br>
-        <br>
+        <input type="text" name="name" placeholder="Name"><br><br>
+
         <h5>Address</h5>
-        <input type="text" name="address" placeholder="Address">
-        <br>
-        <br>
+        <input type="text" name="address" placeholder="Address"><br><br>
+
         <h5>Date of Positve Test</h5>
-        <input type="date">
-        <br>
-        <br>
+        <input type="date" name = "test_date"><br><br>
+
         <h5>Preferred Delivery Date and Time</h5>
-        <input type="date" name = "">
-        <br>
-        <input type="time">
-        <br>
-        <br>
+        <input type="date" name="delivery_date"><br>
+        <input type="time" name="delivery_time"><br><br>
+
         <h5>Dietary Restrictions</h5>
-        <input type="checkbox" name="dietary restrictions" value="No Meat">No Meat<br>
-        <input type="checkbox" name="dietary restrictions" value="No Fish">No Fish<br>
-        <input type="checkbox" name="dietary restrictions" value="No Dairy">No Dairy<br>
-        <input type="checkbox" name="dietary restrictions" value="No Gluten">No Gluten<br>
-        <input type="checkbox" name="dietary restrictions" value="No Nuts">No Nuts<br>
-        <br>
-        <br>
-        <h5>Supplies Needed:</h5>
-        <br>
-        <input type="checkbox" name="supplies" value=1>Peanut Butter<br>
-        <input type="checkbox" name="supplies" value=2>Rice<br>
-        <input type="checkbox" name="supplies" value=3>Pasta<br>
-        <input type="checkbox" name="supplies" value=4>Eggs<br>
-        <input type="checkbox" name="supplies" value=5>Milk<br>
-        <input type="checkbox" name="supplies" value=6>Bread<br>
-        <input type="checkbox" name="supplies" value=7>Chicken<br>
-        <input type="checkbox" name="supplies" value=8>Beef<br>
-        <input type="checkbox" name="supplies" value=9>Fish<br>
-        <input type="checkbox" name="supplies" value=10>Detergent<br>
-        <input type="checkbox" name="supplies" value=11>Toothpaste<br>
-        <input type="checkbox" name="supplies" value=12>Handsoap<br>
-        <input type="checkbox" name="supplies" value=13>Bodywash<br>
-        <input type="checkbox" name="supplies" value=14>Shampoo<br>
-        <input type="checkbox" name="supplies" value=15>Toilet Paper<br>
-        <br>
-        <br>
+        <input type="checkbox" name="restrictions[]" value=1>No Meat<br>
+        <input type="checkbox" name="restrictions[]" value=2>No Fish<br>
+        <input type="checkbox" name="restrictions[]" value=3>No Dairy<br>
+        <input type="checkbox" name="restrictions[]" value=4>No Gluten<br>
+        <input type="checkbox" name="restrictions[]" value=5>No Nuts<br><br><br>
+
+        <h5>Supplies Needed:</h5><br>
+        <input type="checkbox" name="supplies[]" value=14>Canned Vegetables<br>
+        <input type="checkbox" name="supplies[]" value=2>Soup<br>
+        <input type="checkbox" name="supplies[]" value=8>Baby Food<br>
+        <input type="checkbox" name="supplies[]" value=26>Granola Bars<br>
+        <input type="checkbox" name="supplies[]" value=1>Cereal<br>
+        <input type="checkbox" name="supplies[]" value=11>Peanut Butter<br>
+        <input type="checkbox" name="supplies[]" value=21>Rice<br>
+        <input type="checkbox" name="supplies[]" value=3>Pasta<br>
+        <input type="checkbox" name="supplies[]" value=30>Eggs<br>
+        <input type="checkbox" name="supplies[]" value=31>Milk<br>
+        <input type="checkbox" name="supplies[]" value=32>Bread<br>
+        <input type="checkbox" name="supplies[]" value=33>Chicken<br>
+        <input type="checkbox" name="supplies[]" value=34>Beef<br>
+        <input type="checkbox" name="supplies[]" value=35>Fish<br>
+        <input type="checkbox" name="supplies[]" value=36>Detergent<br>
+        <input type="checkbox" name="supplies[]" value=10>Wipes<br>
+        <input type="checkbox" name="supplies[]" value=37>Toothpaste<br>
+        <input type="checkbox" name="supplies[]" value=38>Handsoap<br>
+        <input type="checkbox" name="supplies[]" value=39>Shampoo<br>
+        <input type="checkbox" name="supplies[]" value=9>Diapers<br>
+        <input type="checkbox" name="supplies[]" value=40>Toilet Paper<br><br><br>
+
         <button type="submit">Submit</button>
 
     </html>
