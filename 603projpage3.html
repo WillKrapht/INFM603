@@ -22,39 +22,47 @@
     </list>
 </ul></menu><header class="headerBackground"></header><main>
 <div class="header-img"></div></main>
-<form action="volunteer.php" method="get">
-<h3>Want to Help?</h3>
-<br>
-<text>
-    Sign up to volunteer! Please fill out the following information.</text>
-<br>
-<h5>Name</h5>
-<input type="text" name="name" placeholder="Name">
-<br>
-<br>
-<h5>Email</h5>
-<input type="text" name="email" placeholder="Email">
-<br>
-<h5>Address</h5>
-<input type="text" name="address" placeholder="Address">
-<br>
-<h5>Date of Last COVID-19 Test</h5>
-<input type="date" name="test_date"><br><br>
-<h5>Was your test negative?</h5>
-<input type="radio" name="test" value="yes">Yes<br>
-<input type="radio" name="test" value="no">No<br>
-<br>
-<br>
-<h5>Preferred Volunteer Location</h5>
-<input type="radio" name="location" value=1>Bridgeway Community Cupboard<br>
-<input type="radio" name="location" value=2>Glenelg United Methodist Church<br>
-<input type="radio" name="location" value=3>Rachell L. Gray Community Foundation<br>
-<input type="radio" name="location" value=4>Ellicott City Head Start Center<br>
-<input type="radio" name="location" value=5>North Laurel Multi-Service Center<br>
-<input type="radio" name="location" value=6>Solomons Porch Worship Center<br>
-<input type="radio" name="location" value=7>FIRN<br>
-<input type="radio" name="location" value=8>Gethsemane United Methodist Church<br>
-<input type="radio" name="location" value=9>SAFE Food Pantry<br>
+<!-- action="volunteer.php" method="get"  -->
+<form name = "application" action="volunteer.php" method="get" onsubmit = "return validateForm()">
+    <h3>Want to Help?</h3><br>
+    <text>Sign up to volunteer! Please fill out the following information.</text><br>
+    <div class="required">
+        <h5>Name</h5>
+        <input type="text" name="name" placeholder="Name" required><br><br>
+    </div>
+    <div class="required">
+        <h5>Email</h5>
+        <input type="text" name="email" placeholder="Email" required><br><br>
+    </div>
+    <div class = "required">
+        <h5>Address</h5>
+        <input type="text" name="address" placeholder="Address" required><br><br>
+    </div>
+    <div class ="required">
+        <h5>Date of Last COVID-19 Test</h5>
+        <input type="date" name="test_date" required><br><br>
+    </div>
+    <h5>Preferred Volunteer Location</h5>
+    <input type="radio" name="location" value=1 checked>Bridgeway Community Cupboard<br>
+    <input type="radio" name="location" value=2>Glenelg United Methodist Church<br>
+    <input type="radio" name="location" value=3>Rachell L. Gray Community Foundation<br>
+    <input type="radio" name="location" value=4>Ellicott City Head Start Center<br>
+    <input type="radio" name="location" value=5>North Laurel Multi-Service Center<br>
+    <input type="radio" name="location" value=6>Solomons Porch Worship Center<br>
+    <input type="radio" name="location" value=7>FIRN<br>
+    <input type="radio" name="location" value=8>Gethsemane United Methodist Church<br>
+    <input type="radio" name="location" value=9>SAFE Food Pantry<br><br>
 
-<br>
-<button type="submit">Submit</button></html>
+    <button type="submit">Submit</button>
+</form>
+<script>
+    function validateForm() {
+       if (document.forms[application]["location"].value < 1) {
+           alert("Please enter your name.");
+           return false;
+       } 
+    }
+
+</script>
+
+</html>

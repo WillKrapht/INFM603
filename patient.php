@@ -27,13 +27,13 @@
     $address = $_GET['address'];
     $test_date = $_GET['test_date'];
     $delivery_date = $_GET['delivery_date'];
-    $delivery_time = $_GET['deliver_time'];
+    $delivery_time = $_GET['delivery_time'];
     $restrictions = $_GET['restrictions'];
     $supplies = $_GET['supplies'];
     $id = rand();
     
     /*create patient first*/
-    $sql = "INSERT INTO patients (patient_id, name, address, test_date, delivery_date) VALUES ('$id', '$name', '$address', '$test_date', ('$delivery_date'))";
+    $sql = "INSERT INTO patients (patient_id, name, address, test_date, delivery_date) VALUES ('$id', '$name', '$address', '$test_date', ('$delivery_date $delivery_time'))";
     if ($conn->query($sql) === TRUE) {
       echo "\nNew patient created successfully\n";
     } else {

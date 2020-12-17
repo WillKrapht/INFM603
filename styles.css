@@ -63,6 +63,10 @@ list a {
   #row {
     padding-top: 50px;
   }
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
   .column-left {
     /* box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
     font-family: verdana;
@@ -88,7 +92,7 @@ list a {
     margin-left: 0.5em;
     float: left;
     align-content: center;
-    width: 32%;
+    width: 50%;
     height: 26em;
     padding-left: 10.5px;
     border-left: 3px black;
@@ -109,7 +113,7 @@ list a {
 /*From 603projpage3.html*/
 form {
   margin: 0 auto;
-  width: 400px;
+  width: 800px;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
