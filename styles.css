@@ -67,24 +67,72 @@ list a {
     max-width: 100%;
     height: auto;
   }
-  .column-left {
-    /* box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
+  .column-about {
+     box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
     font-family: verdana;
     margin-top: 2em;
     margin-left: 1em;
     top: 20em;
     float: left;
     width: 50%;
-    height: 26em;
+    height: 20em;
     padding-left: 10px;
-    padding-right: 10px; */
-    width: 300px;
+    padding-right: 10px; 
+    /*width: 300px;
     height: 100px;  
     padding: 50px;
     border: 1px solid red;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
     
   }
+  .about-img{
+    margin-top: 2em;
+    margin-right: 1em;
+    float: right;
+    width: 40%;
+    height: 20em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 2px black;
+  
+    }
+  .column-locations {
+    /*box-shadow: 0 4px 8px 0 rgb(58, 58, 58);*/
+   font-family: verdana;
+   margin-top: 2em;
+   margin-left: 1em;
+   top: 20em;
+   float: left;
+   width: 100%;
+   height: 26em;
+   padding-left: 10px;
+   padding-right: 10px; 
+   /*width: 300px;
+   height: 100px;  
+   padding: 50px;
+   border: 1px solid red;
+   box-sizing: border-box;*/
+   
+ }
+ .column-help {
+  /*box-shadow: 0 4px 8px 0 rgb(58, 58, 58);*/
+ font-family: verdana;
+ margin-top: 2em;
+ margin-left: 1em;
+ top: 20em;
+ float: left;
+ width: 100%;
+ height: 26em;
+ padding-left: 10px;
+ padding-right: 10px; 
+ /*width: 300px;
+ height: 100px;  
+ padding: 50px;
+ border: 1px solid red;
+ box-sizing: border-box;*/
+ 
+}
+
   .column-center {
     box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
     font-family: verdana;
@@ -107,6 +155,8 @@ list a {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+
+  
 }
 
 
