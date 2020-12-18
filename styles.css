@@ -78,11 +78,7 @@ list a {
     height: 20em;
     padding-left: 10px;
     padding-right: 10px; 
-    /*width: 300px;
-    height: 100px;  
-    padding: 50px;
-    border: 1px solid red;
-    box-sizing: border-box;*/
+  
     
   }
   .about-img{
@@ -97,7 +93,7 @@ list a {
   
     }
   .column-locations {
-    /*box-shadow: 0 4px 8px 0 rgb(58, 58, 58);*/
+   
    font-family: verdana;
    margin-top: 2em;
    margin-left: 1em;
@@ -107,15 +103,11 @@ list a {
    height: 26em;
    padding-left: 10px;
    padding-right: 10px; 
-   /*width: 300px;
-   height: 100px;  
-   padding: 50px;
-   border: 1px solid red;
-   box-sizing: border-box;*/
+  
    
  }
  .column-help {
-  /*box-shadow: 0 4px 8px 0 rgb(58, 58, 58);*/
+ 
  font-family: verdana;
  margin-top: 2em;
  margin-left: 1em;
@@ -125,26 +117,11 @@ list a {
  height: 26em;
  padding-left: 10px;
  padding-right: 10px; 
- /*width: 300px;
- height: 100px;  
- padding: 50px;
- border: 1px solid red;
- box-sizing: border-box;*/
+
  
 }
 
-  .column-center {
-    box-shadow: 0 4px 8px 0 rgb(58, 58, 58);
-    font-family: verdana;
-    margin-top: 2em;
-    margin-left: 0.5em;
-    float: left;
-    align-content: center;
-    width: 50%;
-    height: 26em;
-    padding-left: 10.5px;
-    border-left: 3px black;
-  }
+  
 
   .heading {
     text-align: center;
@@ -216,3 +193,10 @@ button {
   padding-left: 10px; 
   margin-left: 1.0em;
 }
+ .checkboxes input{
+  margin: 0px 0px 0px 0px;
+ }
+
+ .checkboxes label{
+   margin: 0px 20px 0px 3px;
+ }
