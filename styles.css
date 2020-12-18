@@ -102,7 +102,8 @@ list a {
    width: 100%;
    height: 26em;
    padding-left: 10px;
-   padding-right: 10px; 
+   padding-right: 10px;
+   background-color: rgba(97, 165, 228, 0.575);
   
    
  }
@@ -114,12 +115,22 @@ list a {
  top: 20em;
  float: left;
  width: 100%;
- height: 26em;
+ height: 20em;
  padding-left: 10px;
  padding-right: 10px; 
 
- 
 }
+.food-img{
+  margin-top: 2em;
+  margin-right: 1em;
+  float: right;
+  width: 45%;
+  height: 20em;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 2px black;
+
+  }
 
   
 
